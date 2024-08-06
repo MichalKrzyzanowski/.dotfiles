@@ -1,0 +1,13 @@
+[user]
+	name = MichalKrzyzanowski
+	email = Michael.krzyzanowski.11@gmail.com
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[credential]
+	helper = cache
+[core]
+	editor = nvim
+[merge]
+	tool = nvim
+[mergetool "nvim"]
+	cmd = nvim -d -c \"wincmd l\" -c \"norm ]c\" \"$LOCAL\" \"$MERGED\" \"$REMOTE\"

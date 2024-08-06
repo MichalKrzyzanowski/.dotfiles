@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+dotfiles="${HOME}/.local/bin/dotfiles"
+
+mkdir -p ${HOME}/.dotfiles-backup && \
+${dotfiles} checkout 2>&1 | egrep "\s+\." | awk '{print $1}' | \
+xargs -I{} mv {} ${HOME}/.dotfiles-backup/{}
+exit 0

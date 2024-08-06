@@ -1,0 +1,81 @@
+add_overlay             Add Overlay
+add_shadow              Add Shadow
+add_water               Add Water
+ambient_shade           Calculate Ambient Occlusion Map
+calculate_normal        Calculate Normal
+cloud_shade             Cloud Shade
+constant_shade          Calculate Constant Color Map
+convert_path_to_animation_coords
+                        Calculate Animation Coordinates from Path
+convert_rgl_to_raymesh
+                        Convert rayshader RGL scene to ray_mesh object
+create_texture          Create Texture
+detect_water            Detect water
+flag_banner_obj         Flag Banner 3D Model
+flag_full_obj           Flag 3D Model
+flag_pole_obj           Flag Pole 3D Model
+generate_altitude_overlay
+                        Generate Altitude Overlay
+generate_compass_overlay
+                        Generate Compass Overlay
+generate_contour_overlay
+                        Generate Contour Overlay
+generate_label_overlay
+                        Generate Label Overlay
+generate_line_overlay   Generate Line Overlay
+generate_point_overlay
+                        Generate Point Overlay
+generate_polygon_overlay
+                        Generate Polygon Overlay
+generate_scalebar_overlay
+                        Generate Scalebar Overlay
+generate_waterline_overlay
+                        Generate Waterline Overlay
+height_shade            Calculate Terrain Color Map
+lamb_shade              Calculate Lambert Shading Map
+monterey_counties_sf    California County Data Around Monterey Bay
+monterey_roads_sf       Road Data Around Monterey Bay
+montereybay             Monterey Bay combined topographic and
+                        bathymetric elevation matrix.
+plot_3d                 Plot 3D
+plot_gg                 Transform ggplot2 objects into 3D
+plot_map                Plot Map
+raster_to_matrix        Raster to Matrix
+ray_shade               Calculate Raytraced Shadow Map
+reduce_matrix_size      Reduce Matrix Size (deprecated)
+render_beveled_polygons
+                        Render Beveled Polygons
+render_buildings        Render Buildings
+render_camera           Render Camera
+render_clouds           Render Clouds
+render_compass          Render Compass Symbol
+render_contours         Render Contours
+render_depth            Render Depth of Field
+render_floating_overlay
+                        Render Floating overlay
+render_highquality      Render High Quality
+render_label            Render Label
+render_movie            Render Movie
+render_multipolygonz    Render MULTIPOLYGON Z Geometry
+render_obj              Render Obj
+render_path             Render Path
+render_points           Render Points
+render_polygons         Render Polygons
+render_raymesh          Render Raymesh
+render_resize_window    Resize the rgl Window
+render_scalebar         Render Scale Bar
+render_snapshot         Render Snapshot of 3D Visualization
+render_tree             Render Tree
+render_water            Render Water Layer
+resize_matrix           Resize Matrix
+run_documentation       Run Documentation
+save_3dprint            Save 3D Print
+save_multipolygonz_to_obj
+                        Save MULTIPOLYGON Z sf data to OBJ file
+save_obj                Save OBJ
+save_png                Save PNG
+sphere_shade            Calculate Surface Color Map
+texture_shade           Calculate Texture Shading Map
+washington_monument_multipolygonz
+                        Washington Monument 3D Model as Multipolygon Z
+                        Data

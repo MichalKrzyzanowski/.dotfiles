@@ -1,0 +1,66 @@
+add_object              Add Object
+animate_objects         Animate Objects
+arrow                   Arrow Object
+bezier_curve            Bezier Curve Object
+cone                    Cone Object
+create_instances        Create Instances of an Object
+csg_box                 CSG Box
+csg_capsule             CSG Capsule
+csg_combine             CSG Combine
+csg_cone                CSG Cone
+csg_cylinder            CSG Cylinder
+csg_ellipsoid           CSG Ellipsoid
+csg_elongate            CSG Elongate
+csg_group               CSG Group
+csg_object              Constructive Solid Geometry Object
+csg_onion               CSG Onion
+csg_plane               CSG Plane
+csg_pyramid             CSG Pyramid
+csg_rotate              CSG Rotate
+csg_round               CSG Round
+csg_rounded_cone        CSG Rounded Cone
+csg_scale               CSG Scale
+csg_sphere              CSG Sphere
+csg_torus               CSG Torus
+csg_translate           CSG Translate
+csg_triangle            CSG Triangle
+cube                    Cube Object
+cylinder                Cylinder Object
+dielectric              Dielectric (glass) Material
+diffuse                 Diffuse Material
+disk                    Disk Object
+ellipsoid               Ellipsoid Object
+extruded_path           Extruded Path Object
+extruded_polygon        Extruded Polygon Object
+generate_camera_motion
+                        Generate Camera Movement
+generate_cornell        Generate Cornell Box
+generate_ground         Generate Ground
+generate_studio         Generate Studio
+get_saved_keyframes     Get Saved Keyframes
+glossy                  Glossy Material
+group_objects           Group Objects
+hair                    Hair Material
+lambertian              Lambertian Material (deprecated)
+light                   Light Material
+mesh3d_model            'mesh3d' model
+metal                   Metallic Material
+microfacet              Microfacet Material
+obj_model               'obj' File Object
+path                    Path Object
+pig                     Pig Object
+ply_model               'ply' File Object
+r_obj                   R 3D Model
+raymesh_model           'raymesh' model
+render_animation        Render Animation
+render_ao               Render Ambient Occlusion
+render_preview          Render Preview
+render_scene            Render Scene
+run_documentation       Run Documentation
+segment                 Segment Object
+sphere                  Sphere Object
+text3d                  Text Object
+triangle                Triangle Object
+xy_rect                 Rectangular XY Plane Object
+xz_rect                 Rectangular XZ Plane Object
+yz_rect                 Rectangular YZ Plane Object

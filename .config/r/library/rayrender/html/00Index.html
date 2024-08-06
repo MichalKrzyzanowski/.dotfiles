@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head><title>R: Build and Raytrace 3D Scenes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+<h1> Build and Raytrace 3D Scenes
+<img class="toplogo" src="../../../doc/html/Rlogo.svg" alt="[R logo]" />
+</h1>
+<hr/>
+<div style="text-align: center;">
+<a href="../../../doc/html/packages.html"><img class="arrow" src="../../../doc/html/left.jpg" alt="[Up]" /></a>
+<a href="../../../doc/html/index.html"><img class="arrow" src="../../../doc/html/up.jpg" alt="[Top]" /></a>
+</div><h2>Documentation for package &lsquo;rayrender&rsquo; version 0.33.0</h2>
+
+<ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
+</ul>
+
+<h2>Help Pages</h2>
+
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="add_object.html">add_object</a></td>
+<td>Add Object</td></tr>
+<tr><td style="width: 25%;"><a href="animate_objects.html">animate_objects</a></td>
+<td>Animate Objects</td></tr>
+<tr><td style="width: 25%;"><a href="arrow.html">arrow</a></td>
+<td>Arrow Object</td></tr>
+<tr><td style="width: 25%;"><a href="bezier_curve.html">bezier_curve</a></td>
+<td>Bezier Curve Object</td></tr>
+<tr><td style="width: 25%;"><a href="cone.html">cone</a></td>
+<td>Cone Object</td></tr>
+<tr><td style="width: 25%;"><a href="create_instances.html">create_instances</a></td>
+<td>Create Instances of an Object</td></tr>
+<tr><td style="width: 25%;"><a href="csg_box.html">csg_box</a></td>
+<td>CSG Box</td></tr>
+<tr><td style="width: 25%;"><a href="csg_capsule.html">csg_capsule</a></td>
+<td>CSG Capsule</td></tr>
+<tr><td style="width: 25%;"><a href="csg_combine.html">csg_combine</a></td>
+<td>CSG Combine</td></tr>
+<tr><td style="width: 25%;"><a href="csg_cone.html">csg_cone</a></td>
+<td>CSG Cone</td></tr>
+<tr><td style="width: 25%;"><a href="csg_cylinder.html">csg_cylinder</a></td>
+<td>CSG Cylinder</td></tr>
+<tr><td style="width: 25%;"><a href="csg_ellipsoid.html">csg_ellipsoid</a></td>
+<td>CSG Ellipsoid</td></tr>
+<tr><td style="width: 25%;"><a href="csg_elongate.html">csg_elongate</a></td>
+<td>CSG Elongate</td></tr>
+<tr><td style="width: 25%;"><a href="csg_group.html">csg_group</a></td>
+<td>CSG Group</td></tr>
+<tr><td style="width: 25%;"><a href="csg_object.html">csg_object</a></td>
+<td>Constructive Solid Geometry Object</td></tr>
+<tr><td style="width: 25%;"><a href="csg_onion.html">csg_onion</a></td>
+<td>CSG Onion</td></tr>
+<tr><td style="width: 25%;"><a href="csg_plane.html">csg_plane</a></td>
+<td>CSG Plane</td></tr>
+<tr><td style="width: 25%;"><a href="csg_pyramid.html">csg_pyramid</a></td>
+<td>CSG Pyramid</td></tr>
+<tr><td style="width: 25%;"><a href="csg_rotate.html">csg_rotate</a></td>
+<td>CSG Rotate</td></tr>
+<tr><td style="width: 25%;"><a href="csg_round.html">csg_round</a></td>
+<td>CSG Round</td></tr>
+<tr><td style="width: 25%;"><a href="csg_rounded_cone.html">csg_rounded_cone</a></td>
+<td>CSG Rounded Cone</td></tr>
+<tr><td style="width: 25%;"><a href="csg_scale.html">csg_scale</a></td>
+<td>CSG Scale</td></tr>
+<tr><td style="width: 25%;"><a href="csg_sphere.html">csg_sphere</a></td>
+<td>CSG Sphere</td></tr>
+<tr><td style="width: 25%;"><a href="csg_torus.html">csg_torus</a></td>
+<td>CSG Torus</td></tr>
+<tr><td style="width: 25%;"><a href="csg_translate.html">csg_translate</a></td>
+<td>CSG Translate</td></tr>
+<tr><td style="width: 25%;"><a href="csg_triangle.html">csg_triangle</a></td>
+<td>CSG Triangle</td></tr>
+<tr><td style="width: 25%;"><a href="cube.html">cube</a></td>
+<td>Cube Object</td></tr>
+<tr><td style="width: 25%;"><a href="cylinder.html">cylinder</a></td>
+<td>Cylinder Object</td></tr>
+<tr><td style="width: 25%;"><a href="dielectric.html">dielectric</a></td>
+<td>Dielectric (glass) Material</td></tr>
+<tr><td style="width: 25%;"><a href="diffuse.html">diffuse</a></td>
+<td>Diffuse Material</td></tr>
+<tr><td style="width: 25%;"><a href="disk.html">disk</a></td>
+<td>Disk Object</td></tr>
+<tr><td style="width: 25%;"><a href="ellipsoid.html">ellipsoid</a></td>
+<td>Ellipsoid Object</td></tr>
+<tr><td style="width: 25%;"><a href="extruded_path.html">extruded_path</a></td>
+<td>Extruded Path Object</td></tr>
+<tr><td style="width: 25%;"><a href="extruded_polygon.html">extruded_polygon</a></td>
+<td>Extruded Polygon Object</td></tr>
+<tr><td style="width: 25%;"><a href="generate_camera_motion.html">generate_camera_motion</a></td>
+<td>Generate Camera Movement</td></tr>
+<tr><td style="width: 25%;"><a href="generate_cornell.html">generate_cornell</a></td>
+<td>Generate Cornell Box</td></tr>
+<tr><td style="width: 25%;"><a href="generate_ground.html">generate_ground</a></td>
+<td>Generate Ground</td></tr>
+<tr><td style="width: 25%;"><a href="generate_studio.html">generate_studio</a></td>
+<td>Generate Studio</td></tr>
+<tr><td style="width: 25%;"><a href="get_saved_keyframes.html">get_saved_keyframes</a></td>
+<td>Get Saved Keyframes</td></tr>
+<tr><td style="width: 25%;"><a href="glossy.html">glossy</a></td>
+<td>Glossy Material</td></tr>
+<tr><td style="width: 25%;"><a href="group_objects.html">group_objects</a></td>
+<td>Group Objects</td></tr>
+<tr><td style="width: 25%;"><a href="hair.html">hair</a></td>
+<td>Hair Material</td></tr>
+<tr><td style="width: 25%;"><a href="lambertian.html">lambertian</a></td>
+<td>Lambertian Material (deprecated)</td></tr>
+<tr><td style="width: 25%;"><a href="light.html">light</a></td>
+<td>Light Material</td></tr>
+<tr><td style="width: 25%;"><a href="mesh3d_model.html">mesh3d_model</a></td>
+<td>'mesh3d' model</td></tr>
+<tr><td style="width: 25%;"><a href="metal.html">metal</a></td>
+<td>Metallic Material</td></tr>
+<tr><td style="width: 25%;"><a href="microfacet.html">microfacet</a></td>
+<td>Microfacet Material</td></tr>
+<tr><td style="width: 25%;"><a href="obj_model.html">obj_model</a></td>
+<td>'obj' File Object</td></tr>
+<tr><td style="width: 25%;"><a href="path.html">path</a></td>
+<td>Path Object</td></tr>
+<tr><td style="width: 25%;"><a href="pig.html">pig</a></td>
+<td>Pig Object</td></tr>
+<tr><td style="width: 25%;"><a href="ply_model.html">ply_model</a></td>
+<td>'ply' File Object</td></tr>
+<tr><td style="width: 25%;"><a href="raymesh_model.html">raymesh_model</a></td>
+<td>'raymesh' model</td></tr>
+<tr><td style="width: 25%;"><a href="render_animation.html">render_animation</a></td>
+<td>Render Animation</td></tr>
+<tr><td style="width: 25%;"><a href="render_ao.html">render_ao</a></td>
+<td>Render Ambient Occlusion</td></tr>
+<tr><td style="width: 25%;"><a href="render_preview.html">render_preview</a></td>
+<td>Render Preview</td></tr>
+<tr><td style="width: 25%;"><a href="render_scene.html">render_scene</a></td>
+<td>Render Scene</td></tr>
+<tr><td style="width: 25%;"><a href="run_documentation.html">run_documentation</a></td>
+<td>Run Documentation</td></tr>
+<tr><td style="width: 25%;"><a href="r_obj.html">r_obj</a></td>
+<td>R 3D Model</td></tr>
+<tr><td style="width: 25%;"><a href="segment.html">segment</a></td>
+<td>Segment Object</td></tr>
+<tr><td style="width: 25%;"><a href="sphere.html">sphere</a></td>
+<td>Sphere Object</td></tr>
+<tr><td style="width: 25%;"><a href="text3d.html">text3d</a></td>
+<td>Text Object</td></tr>
+<tr><td style="width: 25%;"><a href="triangle.html">triangle</a></td>
+<td>Triangle Object</td></tr>
+<tr><td style="width: 25%;"><a href="xy_rect.html">xy_rect</a></td>
+<td>Rectangular XY Plane Object</td></tr>
+<tr><td style="width: 25%;"><a href="xz_rect.html">xz_rect</a></td>
+<td>Rectangular XZ Plane Object</td></tr>
+<tr><td style="width: 25%;"><a href="yz_rect.html">yz_rect</a></td>
+<td>Rectangular YZ Plane Object</td></tr>
+</table>
+</div></body></html>

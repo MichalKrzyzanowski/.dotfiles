@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+
+repo_url="$1"
+dotfiles="${HOME}/.local/bin/dotfiles"
+backup="${HOME}/.local/bin/dotfiles-backup"
+
+git init --bare ${repo_url} ${HOME}/.dotfiles
+${backup}
+
+if [ "$?" -ne "0" ]
+then
+	echo "dotfiles backup failed, aborting."
+	exit 1
+fi
+
+${dotfiles} checkout
+${dotfiles} config --local status.showUntrackedFiles no

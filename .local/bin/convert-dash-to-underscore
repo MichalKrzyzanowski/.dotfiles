@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+items="$1"
+for i in ${items}
+do 
+	name=$(echo $i | sed 's/-/_/g')
+	mv ${i} ${name}
+done

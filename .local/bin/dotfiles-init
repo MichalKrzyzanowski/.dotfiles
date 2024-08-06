@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+git init --bare ${HOME}/.dotfiles
+~/.local/bin/dotfiles config status.showUntrackedFiles no

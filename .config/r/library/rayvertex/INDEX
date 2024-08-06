@@ -1,0 +1,48 @@
+add_light               Add light
+add_lines               Add Line
+add_plane_uv_mesh       Add Plane UV Mapping to Mesh
+add_shape               Add Shape
+arrow_mesh              Arrow 3D Model
+center_mesh             Center Mesh
+change_material         Change Material
+color_lines             Color Lines
+cone_mesh               Cone 3D Model
+construct_mesh          Manually construct a mesh
+cube_mesh               Cube 3D Model
+cylinder_mesh           Cylinder 3D Model
+directional_light       Generate Directional Lights
+flip_orientation_mesh   Flip Orientation
+generate_cornell_mesh   Cornell Box 3D Model
+generate_line           Generate Lines
+get_mesh_bbox           Get Mesh Bounding Box
+get_mesh_center         Get Mesh Center
+material_list           Material List
+mesh3d_mesh             Mesh3d 3D Model
+obj_mesh                OBJ Mesh 3D Model
+ply_mesh                PLY Mesh 3D Model
+point_light             Point light
+r_obj                   R 3D Model
+rasterize_lines         Rasterize Lines
+rasterize_scene         Rasterize Scene
+read_obj                Load an OBJ file
+rotate_lines            Rotate Lines
+rotate_mesh             Rotate Mesh
+run_documentation       Run Documentation
+scale_lines             Scale Lines
+scale_mesh              Scale Mesh
+scale_unit_mesh         Scale Mesh to Unit Bounding Box
+scene_from_list         Scene From List
+segment_mesh            Segment 3D Model
+set_material            Set Material
+smooth_normals_mesh     Calculate Smooth Mesh Normals
+sphere_mesh             Sphere 3D Model
+swap_yz                 Swap Y/Z Axis
+text3d_mesh             Text Object
+torus_mesh              Torus 3D Model
+translate_lines         Translate Lines
+translate_mesh          Translate Mesh
+validate_mesh           Validate Mesh Data
+write_scene_to_obj      Write the scene to an OBJ file
+xy_rect_mesh            XY Rectangle 3D Model
+xz_rect_mesh            XZ Rectangle 3D Model
+yz_rect_mesh            YZ Rectangle 3D Model

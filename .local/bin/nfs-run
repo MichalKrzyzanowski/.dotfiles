@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+underground_dir="/home/mike/games/nfs-underground"
+binary_dir="/home/mike/games/nfs-underground/modding-tools/binary-tool"
+cfged_dir="/home/mike/games/nfs-underground/modding-tools/cfged"
+car_toolkit_dir="/home/mike/games/nfs-underground/modding-tools/car-toolkit"
+
+
+function underground()
+{
+	cd ${underground_dir}/data
+	WINEPREFIX=${underground_dir}/.wine wine ${underground_dir}/data/Speed.exe
+	cd - > /dev/null
+}
+
+
+function binary()
+{
+	cd ${binary_dir}
+	WINEPREFIX=${binary_dir}/.wine wine ${binary_dir}/Binary.exe
+	cd - > /dev/null
+}
+
+
+function cfged()
+{
+	cd ${cfged_dir}
+	WINEPREFIX=${cfged_dir}/.wine wine ${cfged_dir}/NFS-CfgEd.exe
+	cd - > /dev/null
+}
+
+
+function car-toolkit()
+{
+	cd ${car_toolkit_dir}
+	WINEPREFIX=${car_toolkit_dir}/.wine wine ${car_toolkit_dir}/NFS-CarToolkit.exe
+	cd - > /dev/null
+}
+
+${1}

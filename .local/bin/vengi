@@ -1,0 +1,47 @@
+#!/usr/bin/env sh
+
+vengi_source="/home/mike/repos/vengi"
+vengi_build="${vengi_source}/build"
+
+
+voxedit()
+{
+	cd "/home/mike/vengi"
+	./voxedit
+	cd - > /dev/null
+}
+
+
+voxconvert()
+{
+	cd ${vengi_build}/voxconvert
+	./vengi-voxconvert
+	cd - > /dev/null
+}
+
+
+voxconvertui()
+{
+	cd ${vengi_build}/voxconvert
+	./vengi-voxconvertui
+	cd - > /dev/null
+}
+
+
+thumbnailer()
+{
+	cd ${vengi_build}/thumbnailer
+	./vengi-thumbnailer
+	cd - > /dev/null
+}
+
+
+build()
+{
+	cd ${vengi_source}
+	make
+	cd - > /dev/null
+}
+
+
+${1}
