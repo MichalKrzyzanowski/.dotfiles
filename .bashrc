@@ -25,5 +25,12 @@ PS1='(\[\033[1;32m\]\u@\h\[\033[1;34m\] \W\[\033[0m\])\$ '
 SDL_GAMECONTROLLERCONFIG=$(cat ~/gamepad-db/.controller_config)
 
 # custom completion
+if [ -e "/usr/share/bash-completion/completions/git" ]
+then
+	source /usr/share/bash-completion/completions/git
+	__git_complete dotfiles __git_main
+else
+	echo "no"
+fi
 complete -W "underground binary cfged car-toolkit" nfs-run
 complete -W "voxedit voxconvert voxconvertui thumbnailer build" vengi
