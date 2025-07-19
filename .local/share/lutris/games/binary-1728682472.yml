@@ -1,0 +1,7 @@
+game:
+  exe: /home/mike/tools/binary/Binary.exe
+  prefix: /home/mike/tools/binary
+  working_dir: /home/mike/tools/binary
+wine:
+  system_winetricks: true
+  version: system

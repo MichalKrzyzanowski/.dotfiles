@@ -1,0 +1,8 @@
+system:
+  game_path: /home/mike/games
+wine:
+  battleye: false
+  dgvoodoo2: false
+  eac: false
+  fsr: false
+  system_winetricks: true

@@ -1,0 +1,47 @@
+game:
+  exe: /home/mike/games/assassins-creed/drive_c/GOG Games/Assassins Creed/AssassinsCreed_Game.exe
+  launch_configs:
+  - exe: /home/mike/games/assassins-creed/drive_c/GOG Games/Assassins Creed/AssassinsCreed_Dx9.exe
+    name: Assassin's Creed
+  - exe: /home/mike/games/assassins-creed/drive_c/GOG Games/Assassins Creed/AssassinsCreed_Dx10.exe
+    name: Assassin's Creed
+  - exe: /home/mike/games/assassins-creed/drive_c/GOG Games/Assassins Creed/Manual//Assassins_PC_Manual.pdf
+    name: Manual
+  name: Assassin's Creed
+game_slug: assassins-creed-directors-cut
+name: "Assassin's Creed\xAE: Director's Cut"
+script:
+  files:
+  - goginstaller: N/A:Select the installer from GOG
+  game:
+    exe: /home/mike/games/assassins-creed/drive_c/GOG Games/Assassins Creed/AssassinsCreed_Game.exe
+    launch_configs:
+    - exe: /home/mike/games/assassins-creed/drive_c/GOG Games/Assassins Creed/AssassinsCreed_Dx9.exe
+      name: Assassin's Creed
+    - exe: /home/mike/games/assassins-creed/drive_c/GOG Games/Assassins Creed/AssassinsCreed_Dx10.exe
+      name: Assassin's Creed
+    - exe: /home/mike/games/assassins-creed/drive_c/GOG Games/Assassins Creed/Manual//Assassins_PC_Manual.pdf
+      name: Manual
+    name: Assassin's Creed
+  installer:
+  - autosetup_gog_game: goginstaller
+  - copy:
+      dst: $GAMEDIR/extras
+      src: /home/mike/.cache/lutris/installer/assassins-creed-directors-cut/gog/assassins_creed_manual.zip
+  - copy:
+      dst: $GAMEDIR/extras
+      src: /home/mike/.cache/lutris/installer/assassins-creed-directors-cut/gog/assassins_creed_complete_soundtrack.zip
+  - copy:
+      dst: $GAMEDIR/extras
+      src: /home/mike/.cache/lutris/installer/assassins-creed-directors-cut/gog/assassins_creed_avatars.zip
+  - copy:
+      dst: $GAMEDIR/extras
+      src: /home/mike/.cache/lutris/installer/assassins-creed-directors-cut/gog/assassins_creed_artworks.zip
+  - copy:
+      dst: $GAMEDIR/extras
+      src: /home/mike/.cache/lutris/installer/assassins-creed-directors-cut/gog/assassins_creed_art_book.zip
+  system: {}
+service: gog
+service_id: '1207659023'
+slug: assassins_creed_directors_cut
+version: GOG

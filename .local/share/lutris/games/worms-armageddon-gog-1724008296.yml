@@ -1,0 +1,28 @@
+game:
+  exe: drive_c/GOG Games/Worms Armageddon/WA.exe
+  prefix: /home/mike/games/worms-armageddon
+game_slug: worms-armageddon
+name: Worms Armageddon
+script:
+  files:
+  - setup_wa: N/A:Please select the GOG installer
+  game:
+    exe: drive_c/GOG Games/Worms Armageddon/WA.exe
+    prefix: $GAMEDIR
+  installer:
+  - task:
+      app: d3dx9
+      arch: win64
+      prefix: /home/mike/games/worms-armageddon
+      silent: 'True'
+      wine_path: /home/mike/.local/share/lutris/runners/wine/wine-ge-8-26-x86_64/bin/wine
+  - task:
+      arch: win64
+      env: {}
+      executable: /home/mike/downloads/setup_worms_armageddon_gog-3.8.1_(43454).exe
+      prefix: /home/mike/games/worms-armageddon
+      wine_path: /home/mike/.local/share/lutris/runners/wine/wine-ge-8-26-x86_64/bin/wine
+service: gog
+slug: worms-armageddon-gog
+version: GOG
+year: 1999

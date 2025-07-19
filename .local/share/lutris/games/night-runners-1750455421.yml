@@ -1,0 +1,6 @@
+game:
+  exe: /home/mike/games/steamgames-local/NIGHT-RUNNERS PROLOGUE/NIGHT-RUNNERS PROLOGUE.exe
+  prefix: /home/mike/games/steamgames-local/NIGHT-RUNNERS PROLOGUE/.wine
+  working_dir: /home/mike/games/steamgames-local/NIGHT-RUNNERS PROLOGUE/
+system:
+  mangohud: true

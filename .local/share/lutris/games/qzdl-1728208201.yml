@@ -1,0 +1,6 @@
+game:
+  args: ''
+  exe: /usr/bin/qzdl
+  working_dir: null
+system:
+  disable_runtime: true

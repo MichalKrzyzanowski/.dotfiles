@@ -1,0 +1,30 @@
+game:
+  arch: win32
+  args: -profilePath . -noconsole
+  exe: /home/mike/games/blockland/drive_c/Program Files/Blockland/Blockland.exe
+  prefix: /home/mike/games/blockland
+game_slug: blockland
+name: Blockland
+script:
+  files:
+  - installer:
+      filename: Blockland_Setup.nsis
+      url: https://blockland.us/files/Blockland_Setup.exe
+  game:
+    arch: win32
+    args: -profilePath . -noconsole
+    exe: drive_c/Program Files/Blockland/BlocklandLauncher.exe
+    prefix: $GAMEDIR
+  installer:
+  - task:
+      arch: win32
+      prefix: /home/mike/games/blockland
+      wine_path: /home/mike/.local/share/lutris/runners/wine/wine-ge-8-26-x86_64/bin/wine
+  - extract:
+      dst: $GAMEDIR/drive_c/Program Files/Blockland
+      file: installer
+slug: blockland-launcher
+system:
+  gamescope: false
+version: Launcher
+year: 2007

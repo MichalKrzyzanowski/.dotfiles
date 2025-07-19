@@ -1,0 +1,4 @@
+game:
+  exe: /home/mike/tools/uxm/UXM Selective Unpack.exe
+  prefix: /home/mike/tools/uxm/.wine
+  working_dir: /home/mike/tools/uxm/

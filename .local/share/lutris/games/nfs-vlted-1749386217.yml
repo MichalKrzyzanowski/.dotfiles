@@ -1,0 +1,4 @@
+game:
+  exe: /home/mike/tools/nfs-vlted/NFS-VltEd.exe
+  prefix: /home/mike/tools/nfs-vlted/.wine
+  working_dir: /home/mike/tools/nfs-vlted/

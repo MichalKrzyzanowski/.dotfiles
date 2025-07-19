@@ -1,0 +1,4 @@
+game:
+  args: +set fs_basepath doom-3
+  exe: /usr/bin/dhewm3
+  working_dir: /home/mike/games

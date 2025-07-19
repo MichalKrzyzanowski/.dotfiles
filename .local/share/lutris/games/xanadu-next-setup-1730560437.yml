@@ -1,0 +1,38 @@
+game:
+  arch: auto
+  exe: /home/mike/games/xanadu-next/XANADU.exe
+  prefix: /home/mike/games/xanadu-next/.wine
+  working_dir: /home/mike/games/xanadu-next/
+game_slug: xanadu-next
+name: xanadu-next
+script:
+  files:
+  - setupfile: N/A:Select the setup file
+  game:
+    exe: _xXx_AUTO_WIN32_xXx_
+    prefix: $GAMEDIR
+  installer:
+  - task:
+      arch: win64
+      env:
+        LC_ALL: ''
+      executable: /home/mike/downloads/setup_xanadu_next_24.11.2016_(16643).exe
+      prefix: /home/mike/games/xanadu-next
+      wine_path: /home/mike/.local/share/lutris/runners/wine/wine-ge-8-26-x86_64/bin/wine
+  system:
+    env:
+      LC_ALL: ''
+slug: xanadu-next-setup
+system:
+  env:
+    LC_ALL: ''
+  mangohud: true
+version: Setup file
+wine:
+  battleye: false
+  d3d_extras: false
+  dxvk: true
+  dxvk_nvapi: false
+  eac: false
+  version: GE-Proton10-4
+  vkd3d: false

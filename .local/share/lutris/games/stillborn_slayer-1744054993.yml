@@ -1,0 +1,20 @@
+game:
+  exe: /home/mike/games/stillborn-slayer/drive_c/GOG Games/Stillborn Slayer/slayer.exe
+  launch_configs: []
+  name: Stillborn Slayer
+game_slug: stillborn-slayer
+name: Stillborn Slayer
+script:
+  files:
+  - goginstaller: N/A:Select the installer from GOG
+  game:
+    exe: /home/mike/games/stillborn-slayer/drive_c/GOG Games/Stillborn Slayer/slayer.exe
+    launch_configs: []
+    name: Stillborn Slayer
+  installer:
+  - autosetup_gog_game: goginstaller
+  system: {}
+service: gog
+service_id: '1837868719'
+slug: stillborn_slayer
+version: GOG

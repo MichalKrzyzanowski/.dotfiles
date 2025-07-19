@@ -1,0 +1,9 @@
+game:
+  exe: /home/mike/games/steamgames/Dark Souls II Scholar of the First Sin/Game/DarkSoulsII.exe
+  prefix: /home/mike/games/steamgames/Dark Souls II Scholar of the First Sin/Game/.wine
+  working_dir: /home/mike/games/steamgames/Dark Souls II Scholar of the First Sin/Game/
+wine:
+  battleye: false
+  eac: false
+  overrides:
+    dinput8: n,b

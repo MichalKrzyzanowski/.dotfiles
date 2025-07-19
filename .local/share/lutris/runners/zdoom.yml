@@ -1,0 +1,4 @@
+zdoom:
+  config: /home/mike/.config/gzdoom/gzdoom.ini
+  runner_executable: /usr/bin/gzdoom
+  skill: ''

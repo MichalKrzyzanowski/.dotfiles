@@ -1,0 +1,9 @@
+game:
+  exe: /home/mike/games/steamgames/BloonsTD5/BTD5-Win.exe
+  prefix: /home/mike/games/steamgames/BloonsTD5/.wine
+  working_dir: /home/mike/games/steamgames/BloonsTD5/
+wine:
+  d3d_extras: false
+  dxvk: false
+  dxvk_nvapi: false
+  vkd3d: false

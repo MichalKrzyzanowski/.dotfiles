@@ -1,0 +1,4 @@
+game:
+  exe: /home/mike/games/steamgames/Geometry Dash/GeometryDash.exe
+  prefix: /home/mike/games/steamgames/Geometry Dash/.wine
+  working_dir: /home/mike/games/steamgames/Geometry Dash/

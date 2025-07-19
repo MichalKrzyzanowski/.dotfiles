@@ -1,0 +1,7 @@
+game:
+  args: ''
+  exe: /usr/bin/vintagestory
+  working_dir: /usr/share/vintagestory
+system:
+  disable_runtime: true
+  mangohud: false

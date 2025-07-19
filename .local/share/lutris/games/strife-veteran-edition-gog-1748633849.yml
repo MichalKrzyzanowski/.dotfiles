@@ -1,0 +1,38 @@
+game:
+  exe: /home/mike/games/strife/start.sh
+  gogid: '1432899949'
+  working_dir: /home/mike/games/strife
+game_slug: strife-veteran-edition
+name: 'Strife: Veteran Edition'
+script:
+  files:
+  - goginstaller: N/A:Select the game's setup file
+  game:
+    exe: $GAMEDIR/start.sh
+    gogid: 1432899949
+    working_dir: $GAMEDIR
+  installer:
+  - extract:
+      dst: $CACHE/GOG
+      file: goginstaller
+      format: zip
+  - merge:
+      dst: $GAMEDIR
+      src: $CACHE/GOG/data/noarch/
+  - copy:
+      dst: $GAMEDIR/extras
+      src: /home/mike/.cache/lutris/installer/strife-veteran-edition/gog/strife_manual.zip
+  - copy:
+      dst: $GAMEDIR/extras
+      src: /home/mike/.cache/lutris/installer/strife-veteran-edition/gog/strife_field_guide.zip
+  - copy:
+      dst: $GAMEDIR/extras
+      src: /home/mike/.cache/lutris/installer/strife-veteran-edition/gog/strife_map.zip
+  - copy:
+      dst: $GAMEDIR/extras
+      src: /home/mike/.cache/lutris/installer/strife-veteran-edition/gog/strife_original_dos.zip
+service: gog
+service_id: '1432899949'
+slug: strife-veteran-edition-gog
+version: GOG
+year: 2014

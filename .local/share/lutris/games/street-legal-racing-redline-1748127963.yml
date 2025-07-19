@@ -1,0 +1,6 @@
+game:
+  exe: /home/mike/games/street-legal-racing-redline/StreetLegal_Redline.exe
+  prefix: /home/mike/games/street-legal-racing-redline/.wine
+  working_dir: /home/mike/games/street-legal-racing-redline
+system:
+  mangohud: false

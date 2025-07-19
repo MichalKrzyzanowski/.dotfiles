@@ -1,0 +1,4 @@
+game:
+  core: ppsspp
+  main_file: /home/mike/roms/psp/ULES-00819.iso
+runner: libretro

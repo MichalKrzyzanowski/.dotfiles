@@ -1,0 +1,22 @@
+game:
+  exe: /home/mike/games/labyrinth-of-the-demon-king/drive_c/GOG Games/Labyrinth Of
+    The Demon King/Shinigami.exe
+  launch_configs: []
+  name: Labyrinth Of The Demon King
+game_slug: labyrinth-of-the-demon-king
+name: Labyrinth Of The Demon King
+script:
+  files:
+  - goginstaller: N/A:Select the installer from GOG
+  game:
+    exe: /home/mike/games/labyrinth-of-the-demon-king/drive_c/GOG Games/Labyrinth
+      Of The Demon King/Shinigami.exe
+    launch_configs: []
+    name: Labyrinth Of The Demon King
+  installer:
+  - autosetup_gog_game: goginstaller
+  system: {}
+service: gog
+service_id: '1097598185'
+slug: labyrinth_of_the_demon_king
+version: GOG

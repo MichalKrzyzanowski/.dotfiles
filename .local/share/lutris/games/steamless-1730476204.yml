@@ -1,0 +1,4 @@
+game:
+  exe: /home/mike/tools/steamless/Steamless.exe
+  prefix: /home/mike/tools/steamless/.wine
+  working_dir: /home/mike/tools/steamless/

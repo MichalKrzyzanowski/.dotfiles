@@ -1,0 +1,25 @@
+game:
+  exe: start.sh
+game_slug: super-hexagon
+name: Super Hexagon
+script:
+  files:
+  - goginstaller: N/A:Please select the GOG.com Linux installer
+  game:
+    exe: start.sh
+  installer:
+  - extract:
+      dst: $CACHE/GOG
+      file: goginstaller
+      format: zip
+  - merge:
+      dst: $GAMEDIR
+      src: $CACHE/GOG/data/noarch/
+  - copy:
+      dst: $GAMEDIR/extras
+      src: /home/mike/.cache/lutris/installer/super-hexagon/gog/super_hexagon_tools.zip
+service: gog
+service_id: '1207660213'
+slug: super-hexagon-gogcom
+version: GOG.com
+year: 2012

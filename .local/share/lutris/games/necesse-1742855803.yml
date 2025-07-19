@@ -1,0 +1,9 @@
+game:
+  exe: /home/mike/games/necesse/Necesse.exe
+  prefix: /home/mike/games/necesse/.wine
+  working_dir: /home/mike/games/necesse/
+wine:
+  battleye: false
+  eac: false
+  fsr: false
+  version: UMU-Proton-9.0-3.2
