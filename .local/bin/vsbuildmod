@@ -1,0 +1,42 @@
+#!/usr/bin/env sh
+
+# builds and copies vintage story mods based on passed in dirs.
+# name of mod zip will be the same as the dir name.
+
+vs_mods_dir="/home/mike/.config/VintagestoryData/Mods"
+vs_mod_dir_list=${@}
+
+
+build_mod()
+{
+	mod_dir=$(readlink -f ${1})
+	mod_name=$(basename ${mod_dir})
+
+	printf "building mod: %s\npath: %s\n" ${mod_name} ${mod_dir}
+
+	if [ ! -d "${mod_dir}" ]
+	then
+		echo "not a directory"
+		return
+	elif [ ! -f "${mod_dir}/modinfo.json" ]
+	then
+		echo "invalid vs mod, missing modinfo.json"
+		return
+	fi
+
+	cd ${mod_dir}
+	zip -FSr ${vs_mods_dir}/${mod_name}.zip *
+	cd - > /dev/null
+}
+
+
+if [ -z "${vs_mod_dir_list}" ]
+then
+	echo "no mods to build"
+	exit 1
+fi
+
+for mod in ${vs_mod_dir_list}
+do
+	build_mod ${mod}
+done

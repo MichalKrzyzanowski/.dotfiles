@@ -1,0 +1,4 @@
+game:
+  exe: /home/mike/games/need-for-speed-high-stakes/nfs4.exe
+  prefix: /home/mike/games/need-for-speed-high-stakes/.wine
+  working_dir: /home/mike/games/need-for-speed-high-stakes/

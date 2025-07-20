@@ -1,0 +1,20 @@
+game:
+  exe: /home/mike/games/drive-rally/drive_c/GOG Games/DRIVE Rally/DRIVERally.exe
+  launch_configs: []
+  name: '#DRIVE Rally'
+game_slug: drive-rally
+name: '#DRIVE Rally'
+script:
+  files:
+  - goginstaller: N/A:Select the installer from GOG
+  game:
+    exe: /home/mike/games/drive-rally/drive_c/GOG Games/DRIVE Rally/DRIVERally.exe
+    launch_configs: []
+    name: '#DRIVE Rally'
+  installer:
+  - autosetup_gog_game: goginstaller
+  system: {}
+service: gog
+service_id: '1511212118'
+slug: drive_rally
+version: GOG

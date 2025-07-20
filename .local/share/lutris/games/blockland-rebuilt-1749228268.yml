@@ -1,0 +1,4 @@
+game:
+  exe: /home/mike/games/blockland-rebuilt/BLRebuilt.exe
+  prefix: /home/mike/games/blockland-rebuilt/.wine
+  working_dir: /home/mike/games/blockland-rebuilt/

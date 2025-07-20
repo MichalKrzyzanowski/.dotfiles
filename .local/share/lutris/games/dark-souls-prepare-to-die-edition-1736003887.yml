@@ -1,0 +1,15 @@
+game:
+  exe: /home/mike/games/dark-souls-prepare-to-die-edition/DATA/DARKSOULS.exe
+  prefix: /home/mike/games/dark-souls-prepare-to-die-edition/DATA/.wine/
+  working_dir: /home/mike/games/dark-souls-prepare-to-die-edition/DATA/
+wine:
+  battleye: false
+  d3d_extras: true
+  dxvk: true
+  dxvk_nvapi: true
+  eac: false
+  esync: true
+  fsr: false
+  fsync: true
+  show_debug: -all
+  vkd3d: true

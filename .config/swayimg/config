@@ -1,0 +1,3 @@
+[general]
+[keys.gallery]
+d = exec mv % -t ~/trash; reload

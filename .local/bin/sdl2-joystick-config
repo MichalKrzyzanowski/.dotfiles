@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+platform=${1}
+guid=${2}
+cat ${HOME}/.gamecontrollerdb | grep -i ${platform} | grep -i ${guid}
+

@@ -1,0 +1,22 @@
+game:
+  args: -gog
+  exe: /home/mike/games/everafter-falls/drive_c/GOG Games/Everafter Falls/Game.exe
+  launch_configs: []
+  name: Everafter Falls
+game_slug: everafter-falls
+name: Everafter Falls
+script:
+  files:
+  - goginstaller: N/A:Select the installer from GOG
+  game:
+    args: -gog
+    exe: /home/mike/games/everafter-falls/drive_c/GOG Games/Everafter Falls/Game.exe
+    launch_configs: []
+    name: Everafter Falls
+  installer:
+  - autosetup_gog_game: goginstaller
+  system: {}
+service: gog
+service_id: '1926646258'
+slug: everafter_falls
+version: GOG

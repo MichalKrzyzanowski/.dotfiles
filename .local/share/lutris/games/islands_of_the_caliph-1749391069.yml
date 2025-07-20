@@ -1,0 +1,20 @@
+game:
+  exe: /home/mike/games/islands-of-the-caliph/drive_c/GOG Games/Islands of the Caliph/RPG_001.exe
+  launch_configs: []
+  name: Islands of the Caliph
+game_slug: islands-of-the-caliph
+name: Islands of the Caliph
+script:
+  files:
+  - goginstaller: N/A:Select the installer from GOG
+  game:
+    exe: /home/mike/games/islands-of-the-caliph/drive_c/GOG Games/Islands of the Caliph/RPG_001.exe
+    launch_configs: []
+    name: Islands of the Caliph
+  installer:
+  - autosetup_gog_game: goginstaller
+  system: {}
+service: gog
+service_id: '1325207141'
+slug: islands_of_the_caliph
+version: GOG

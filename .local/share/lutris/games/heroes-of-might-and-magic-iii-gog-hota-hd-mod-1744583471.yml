@@ -1,0 +1,61 @@
+game:
+  exe: drive_c/GOG Games/HoMM 3 Complete/HD_Launcher.exe
+  prefix: /home/mike/games/heroes-of-might-and-magic-iii
+game_slug: heroes-of-might-and-magic-iii
+name: Heroes of Might and Magic III
+script:
+  files:
+  - installer: N/A:Select the game's setup file
+  - hota_setup: https://heroes3towns.com/HotA/HotA_1.7.2_setup.exe
+  game:
+    exe: drive_c/GOG Games/HoMM 3 Complete/HD_Launcher.exe
+    prefix: $GAMEDIR
+  installer:
+  - input_menu:
+      id: HOTA_LANG
+      options:
+      - {}
+      - {}
+      preselect: english
+  - task:
+      arch: win64
+      prefix: /home/mike/games/heroes-of-might-and-magic-iii
+      wine_path: /home/mike/.local/share/lutris/runners/wine/wine-ge-8-26-x86_64/bin/wine
+  - task:
+      app: directplay
+      arch: win64
+      prefix: /home/mike/games/heroes-of-might-and-magic-iii
+      silent: 'True'
+      wine_path: /home/mike/.local/share/lutris/runners/wine/wine-ge-8-26-x86_64/bin/wine
+  - task:
+      arch: win64
+      args: /SILENT /LANG=english
+      env: {}
+      executable: /home/mike/.cache/lutris/installer/heroes-of-might-and-magic-iii/gog/setup_heroes_of_might_and_magic_3_complete_4.0_(3.2)_gog_0.1_(77075).exe
+      prefix: /home/mike/games/heroes-of-might-and-magic-iii
+      wine_path: /home/mike/.local/share/lutris/runners/wine/wine-ge-8-26-x86_64/bin/wine
+  - task:
+      arch: win64
+      args: /SILENT /LANG=english /DIR="/home/mike/games/heroes-of-might-and-magic-iii/drive_c/GOG
+        Games/HoMM 3 Complete"
+      env: {}
+      executable: /home/mike/.cache/lutris/installer/heroes-of-might-and-magic-iii/hota_setup/HotA_1.7.2_setup.exe
+      prefix: /home/mike/games/heroes-of-might-and-magic-iii
+      wine_path: /home/mike/.local/share/lutris/runners/wine/wine-ge-8-26-x86_64/bin/wine
+  - copy:
+      dst: $GAMEDIR/extras
+      src: /home/mike/.cache/lutris/installer/heroes-of-might-and-magic-iii/gog/homm3_manuals.zip
+  - copy:
+      dst: $GAMEDIR/extras
+      src: /home/mike/.cache/lutris/installer/heroes-of-might-and-magic-iii/gog/homm3_tutorial.zip
+  - copy:
+      dst: $GAMEDIR/extras
+      src: /home/mike/.cache/lutris/installer/heroes-of-might-and-magic-iii/gog/homm_3_ost.zip
+  - copy:
+      dst: $GAMEDIR/extras
+      src: /home/mike/.cache/lutris/installer/heroes-of-might-and-magic-iii/gog/homm3_creature_compendium.zip
+service: gog
+service_id: '1207658787'
+slug: heroes-of-might-and-magic-iii-gog-hota-hd-mod
+version: GOG + HotA + HD mod
+year: 1999

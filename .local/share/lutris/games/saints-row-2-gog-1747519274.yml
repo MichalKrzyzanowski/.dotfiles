@@ -1,0 +1,55 @@
+game:
+  arch: win64
+  exe: drive_c/GOG Games/Saints Row 2/SR2_pc.exe
+  prefix: /home/mike/games/saints-row-2
+game_slug: saints-row-2
+name: Saints Row 2
+script:
+  files:
+  - goginstaller: N/A:Please select the GOG.com Windows installer
+  - dx2010: https://lutris.net/files/tools/directx-2010.tar.gz
+  game:
+    arch: win64
+    exe: drive_c/GOG Games/Saints Row 2/SR2_pc.exe
+    prefix: $GAMEDIR
+  installer:
+  - extract:
+      dst: $CACHE/dxsetup
+      file: dx2010
+  - task:
+      arch: win64
+      prefix: /home/mike/games/saints-row-2
+      wine_path: /home/mike/.local/share/lutris/runners/wine/wine-ge-8-26-x86_64/bin/wine
+  - task:
+      arch: win64
+      args: /silent
+      env: {}
+      executable: /home/mike/.cache/lutris/installer/saints-row-2/dxsetup/DXSETUP.exe
+      prefix: /home/mike/games/saints-row-2
+      wine_path: /home/mike/.local/share/lutris/runners/wine/wine-ge-8-26-x86_64/bin/wine
+  - task:
+      arch: win64
+      prefix: /home/mike/games/saints-row-2
+      wine_path: /home/mike/.local/share/lutris/runners/wine/wine-ge-8-26-x86_64/bin/wine
+  - task:
+      app: vcrun2005 win7
+      arch: win64
+      prefix: /home/mike/games/saints-row-2
+      wine_path: /home/mike/.local/share/lutris/runners/wine/wine-ge-8-26-x86_64/bin/wine
+  - task:
+      arch: win64
+      args: /LANG=English /SP- /SUPPRESSMSGBOXES
+      env: {}
+      executable: /home/mike/.cache/lutris/installer/saints-row-2/gog/setup_saints_row_2_gog-5_(9656).exe
+      prefix: /home/mike/games/saints-row-2
+      wine_path: /home/mike/.local/share/lutris/runners/wine/wine-ge-8-26-x86_64/bin/wine
+  - copy:
+      dst: $GAMEDIR/extras
+      src: /home/mike/.cache/lutris/installer/saints-row-2/gog/saints_row_2_manual.zip
+service: gog
+service_id: '1430740458'
+slug: saints-row-2-gog
+system:
+  mangohud: false
+version: GOG
+year: 2008

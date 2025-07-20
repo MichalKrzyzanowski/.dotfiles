@@ -1,0 +1,7 @@
+game:
+  exe: /home/mike/games/need-for-speed-most-wanted/speed.exe
+  prefix: /home/mike/games/need-for-speed-most-wanted/.wine
+  working_dir: /home/mike/games/need-for-speed-most-wanted/
+wine:
+  overrides:
+    dinput8: n,b

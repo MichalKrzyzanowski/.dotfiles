@@ -1,0 +1,11 @@
+game:
+  exe: /home/mike/games/monster-hunter-frontier/mhf.exe
+  prefix: /home/mike/games/monster-hunter-frontier/.wine
+  working_dir: /home/mike/games/monster-hunter-frontier
+wine:
+  battleye: false
+  eac: false
+  esync: true
+  fsr: false
+  fsync: true
+  version: wine-ge-8-26-x86_64

@@ -1,0 +1,14 @@
+game:
+  exe: /home/mike/games/need-for-speed-underground-2/data/speed2.exe
+  prefix: /home/mike/games/need-for-speed-underground-2/.wine
+system:
+  single_cpu: false
+wine:
+  battleye: false
+  dgvoodoo2: false
+  eac: false
+  esync: true
+  fsr: false
+  fsync: true
+  show_debug: -all
+  version: wine-ge-8-26-x86_64

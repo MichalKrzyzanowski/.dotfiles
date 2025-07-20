@@ -1,0 +1,6 @@
+game:
+  args: ''
+  exe: /usr/bin/openstarbound
+  working_dir: null
+system:
+  disable_runtime: true

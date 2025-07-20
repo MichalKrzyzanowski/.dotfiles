@@ -1,0 +1,27 @@
+game:
+  exe: /home/mike/games/sender/drive_c/GOG Games/Sender/Launch Sender.lnk
+  prefix: /home/mike/games/sender
+game_slug: sender
+name: sender
+script:
+  files:
+  - setupfile: N/A:Select the setup file
+  game:
+    exe: _xXx_AUTO_WIN32_xXx_
+    prefix: $GAMEDIR
+  installer:
+  - task:
+      arch: win64
+      env:
+        LC_ALL: ''
+      executable: /home/mike/downloads/setup_sender_1.4.1b_(64bit)_(74116).exe
+      prefix: /home/mike/games/sender
+      wine_path: /home/mike/.local/share/lutris/runners/wine/wine-ge-8-26-x86_64/bin/wine
+  system:
+    env:
+      LC_ALL: ''
+slug: sender-setup
+system:
+  env:
+    LC_ALL: ''
+version: Setup file

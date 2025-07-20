@@ -1,0 +1,3 @@
+game:
+  exe: /home/mike/games/need-for-speed-underground/Speed.exe
+  prefix: /home/mike/games/need-for-speed-underground/.wine

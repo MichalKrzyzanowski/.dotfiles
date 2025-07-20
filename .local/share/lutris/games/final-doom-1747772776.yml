@@ -1,0 +1,5 @@
+game:
+  args: -file /home/mike/games/doom/mods/gameplay/FinalDoomer_v3.4.pk3
+  files:
+  - /home/mike/games/doom/mods/hud/fullscrn_huds.pk3
+  main_file: /home/mike/games/doom/final_doom.ipk3

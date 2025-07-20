@@ -1,0 +1,6 @@
+game:
+  exe: /home/mike/games/terraria/game/Terraria
+  ld_preload: /home/mike/games/terraria/game/.wine
+  working_dir: /home/mike/games/terraria/game/
+system:
+  mangohud: false

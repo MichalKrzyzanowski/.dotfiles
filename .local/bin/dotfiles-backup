@@ -1,8 +1,26 @@
 #!/usr/bin/env sh
 
-dotfiles="${HOME}/.local/bin/dotfiles"
+set -e
 
-mkdir -p ${HOME}/.dotfiles-backup && \
-${dotfiles} checkout 2>&1 | egrep "\s+\." | awk '{print $1}' | \
-xargs -I{} mv {} ${HOME}/.dotfiles-backup/{}
+dotfiles="${HOME}/.local/bin/dotfiles"
+backup_path="${HOME}/.dotfiles-backup"
+
+echo "backuping dotfiles..."
+
+mkdir -p ${backup_path}
+files_to_backup=$(${dotfiles} checkout 2>&1 | grep -E "\s+\." | awk '{print $1}')
+folders_to_create=$(echo ${files_to_backup} | xargs dirname | sort -u)
+
+echo "creating backup folders: ${folders_to_create}"
+for file in ${folders_to_create}
+do
+	mkdir -p ${backup_path}/${file}
+done
+
+echo "files to backup: ${files_to_backup}"
+for file in ${files_to_backup}
+do
+	cp ${HOME}/${file} ${backup_path}/${file}
+done
+
 exit 0

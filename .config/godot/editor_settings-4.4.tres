@@ -1,0 +1,125 @@
+[gd_resource type="EditorSettings" load_steps=5 format=3]
+
+[sub_resource type="InputEventKey" id="InputEventKey_1l353"]
+device = -1
+physical_keycode = 82
+unicode = 114
+
+[sub_resource type="InputEventKey" id="InputEventKey_g51nm"]
+device = -1
+physical_keycode = 83
+unicode = 115
+
+[sub_resource type="InputEventKey" id="InputEventKey_eogjs"]
+device = -1
+physical_keycode = 71
+unicode = 103
+
+[sub_resource type="InputEventKey" id="InputEventKey_fx4h5"]
+keycode = 4194326
+
+[resource]
+interface/editor/editor_screen = -2
+interface/editor/main_font_size = 15
+interface/editor/code_font_size = 15
+interface/editor/single_window_mode = true
+interface/editor/show_update_spinner = false
+interface/inspector/default_color_picker_mode = 1
+interface/inspector/default_color_picker_shape = 0
+interface/theme/preset = "Custom"
+interface/theme/base_color = Color(0.17, 0.17, 0.2, 1)
+interface/theme/accent_color = Color(0.642775, 0.522508, 0.852539, 1)
+interface/theme/contrast = 0.4
+interface/scene_tabs/display_close_button = 2
+filesystem/external_programs/raster_image_editor = "/usr/bin/pixelorama"
+filesystem/external_programs/vector_image_editor = "/usr/bin/inkscape"
+filesystem/external_programs/audio_editor = "/usr/bin/lmms"
+filesystem/external_programs/3d_model_editor = "/usr/bin/blender"
+filesystem/external_programs/terminal_emulator = "/usr/bin/foot"
+filesystem/directories/autoscan_project_path = "filesystem/directories/default_project_path"
+filesystem/directories/default_project_path = "/home/mike/documents/godot-projects"
+filesystem/file_dialog/show_hidden_files = true
+filesystem/import/blender/blender_path = "/usr/bin/blender"
+docks/scene_tree/start_create_dialog_fully_expanded = true
+text_editor/appearance/caret/type = 1
+text_editor/appearance/caret/caret_blink = false
+text_editor/appearance/whitespace/draw_spaces = true
+text_editor/behavior/navigation/scroll_past_end_of_file = true
+text_editor/behavior/navigation/smooth_scrolling = false
+text_editor/behavior/files/trim_trailing_whitespace_on_save = true
+text_editor/behavior/files/auto_reload_scripts_on_external_change = true
+text_editor/behavior/files/open_dominant_script_on_scene_change = true
+text_editor/completion/idle_parse_delay = 0.1
+text_editor/completion/code_complete_delay = 0.01
+editors/3d_gizmos/gizmo_settings/bone_axis_length = 0.1
+editors/3d/navigation/emulate_numpad = false
+run/platforms/linuxbsd/prefer_wayland = true
+network/connection/network_mode = 1
+editors/3d/navigation/orbit_modifier = 0
+editors/3d/navigation/pan_modifier = 1
+editors/3d/navigation/zoom_modifier = 4
+export/android/android_sdk_path = ""
+export/android/debug_keystore = ""
+export/android/debug_keystore_pass = "android"
+export/macos/rcodesign = ""
+export/web/http_port = 8060
+export/web/tls_key = ""
+export/web/tls_certificate = ""
+export/windows/rcedit = ""
+export/windows/osslsigncode = ""
+export/windows/wine = ""
+_default_feature_profile = "vim"
+_use_favorites_root_selection = false
+network/debug_adapter/request_timeout = 1000
+editors/3d_gizmos/gizmo_colors/path = Color(0.5, 0.5, 1, 0.8)
+editors/grid_map/editor_side = 1
+export/android/java_sdk_path = ""
+_editor_settings_advanced_mode = true
+_project_settings_advanced_mode = true
+_export_template_download_directory = "/home/mike/.cache/godot"
+_script_setup_templates_dictionary = {
+"Area2D": "1NodeGd Style Conventions",
+"AudioStreamPlayer": "1NodeGd Style Conventions",
+"Button": "1NodeGd Style Conventions",
+"CharacterBody2D": "1NodeGd Style Conventions",
+"Control": "1NodeGd Style Conventions",
+"Label": "1NodeGd Style Conventions",
+"Node": "1NodeGd Style Conventions",
+"Node2D": "1NodeGd Style Conventions",
+"Quest": "0ObjectEmpty",
+"SubViewportContainer": "1NodeGd Style Conventions"
+}
+_script_setup_use_script_templates = true
+shortcuts = [{
+"name": "spatial_editor/instant_rotate",
+"shortcuts": [SubResource("InputEventKey_1l353")]
+}, {
+"name": "spatial_editor/instant_scale",
+"shortcuts": [SubResource("InputEventKey_g51nm")]
+}, {
+"name": "spatial_editor/instant_translate",
+"shortcuts": [SubResource("InputEventKey_eogjs")]
+}, {
+"name": "spatial_editor/viewport_zoom_modifier_1",
+"shortcuts": [SubResource("InputEventKey_fx4h5")]
+}, {
+"name": "spatial_editor/viewport_zoom_modifier_2",
+"shortcuts": []
+}]
+metadata/script_setup_templates_dictionary = {
+"Button": "1NodeGd Style Conventions",
+"Camera2D": "1NodeGd Style Conventions",
+"CharacterBody2D": "0CharacterBody2DBasic Movement",
+"CodeEdit": "0NodeDefault",
+"CollisionShape2D": "1NodeGd Style Conventions",
+"Control": "1NodeGd Style Conventions",
+"NinePatchRect": "1NodeGd Style Conventions",
+"Node": "1NodeGd Style Conventions",
+"Node2D": "1NodeGd Style Conventions",
+"Node3D": "0NodeDefault",
+"Sprite2D": "1NodeGd Style Conventions",
+"TextEdit": "1NodeGd Style Conventions",
+"VBoxContainer": "1NodeGd Style Conventions"
+}
+metadata/script_setup_use_script_templates = true
+metadata/export_template_download_directory = "/home/mike/.cache/godot"

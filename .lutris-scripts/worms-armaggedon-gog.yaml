@@ -1,0 +1,30 @@
+description: null
+game_slug: worms-armageddon
+gogslug: worms_armageddon
+humblestoreid: ''
+installer_slug: worms-armageddon-gog
+name: Worms Armageddon
+notes: ''
+runner: wine
+script:
+  files:
+  - setup_wa: N/A:Please select the GOG installer
+  game:
+    exe: drive_c/GOG Games/Worms Armageddon/WA.exe
+    prefix: $GAMEDIR
+  installer:
+  - task:
+      app: d3dx9
+      arch: win64
+      description: Installing DirectX 9
+      name: winetricks
+      prefix: $GAMEDIR
+      silent: true
+  - task:
+      executable: $setup_wa
+      name: wineexec
+      prefix: $GAMEDIR
+slug: worms-armageddon-gog
+steamid: 217200
+version: GOG
+year: 1999

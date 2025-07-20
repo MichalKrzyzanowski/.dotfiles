@@ -1,0 +1,28 @@
+game:
+  exe: /home/mike/games/cat-quest-ii/drive_c/GOG Games/Cat Quest II/Launch Cat Quest
+    II.lnk
+  prefix: /home/mike/games/cat-quest-ii
+game_slug: cat-quest-ii
+name: cat-quest-ii
+script:
+  files:
+  - setupfile: N/A:Select the setup file
+  game:
+    exe: _xXx_AUTO_WIN32_xXx_
+    prefix: $GAMEDIR
+  installer:
+  - task:
+      arch: win64
+      env:
+        LC_ALL: ''
+      executable: /home/mike/downloads/setup_cat_quest_ii_1.7.7.3_(51746).exe
+      prefix: /home/mike/games/cat-quest-ii
+      wine_path: /home/mike/.local/share/lutris/runners/wine/wine-ge-8-26-x86_64/bin/wine
+  system:
+    env:
+      LC_ALL: ''
+slug: cat-quest-ii-setup
+system:
+  env:
+    LC_ALL: ''
+version: Setup file

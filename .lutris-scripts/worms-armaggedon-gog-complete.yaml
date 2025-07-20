@@ -1,0 +1,50 @@
+requires: worms-armageddon
+extends: worms-armageddon
+description: "adds missing extras from CD release and plenty of different terrains, graves, etc."
+game_slug: worms-armageddon
+installer_slug: worms-armageddon-mods
+name: Worms Armageddon
+runner: wine
+
+script:
+  variables:
+    game_data: drive_c/GOG Games/Worms Armageddon
+
+  files:
+  # programs
+  - wk_terrain_sync: https://github.com/nizikawa-worms/wkTerrainSync/releases/latest/download/wkTerrainSync-release.zip
+  # speechbanks
+  - missing_digital_speechbanks: http://dream17.abime.net/filage/wa_digital_speech.zip
+  - original_worms_english_speechbank: http://dream17.abime.net/filage/downloads_speechbank_classic.zip
+  - mario_speechbank: https://www.tus-wa.com/files/download/file-2811-1
+  # flags
+  - skynet_flag: https://www.tus-wa.com/files/download/file-1921-1
+  # flags
+  - terraria_graves: https://www.tus-wa.com/files/download/file-2898
+  # terrains
+  - candy_2_terrain: https://www.tus-wa.com/files/download/file-2899-1
+
+  installer:
+  - extract:
+      file: $mario_speechbank
+      dst: $GAMEDIR/$game_data/DATA/User/Speech/Mario
+  - extract:
+      file: $missing_digital_speechbanks
+      dst: $GAMEDIR/$game_data/DATA/User/Speech
+  - extract:
+      file: $original_worms_english_speechbank
+      dst: $GAMEDIR/$game_data/DATA/User/Speech/Classic
+  - extract:
+      file: $terraria_graves
+      dst: $GAMEDIR/$game_data/User/Graves
+  - move:
+      src: $skynet_flag
+      dst: $GAMEDIR/$game_data/User/Flags/skynet.bmp
+  - extract:
+      file: $wk_terrain_sync
+      dst: $GAMEDIR/$game_data
+  - extract:
+      file: $candy_2_terrain
+      dst: $GAMEDIR/$game_data/DATA/Level/Candy
+slug: worms-armageddon-mods
+version: modpack

@@ -1,0 +1,8 @@
+game:
+  exe: /home/mike/games/need-for-speed-carbon/NFSC.exe
+  prefix: /home/mike/games/need-for-speed-carbon/.wine
+  working_dir: /home/mike/games/need-for-speed-carbon/
+wine:
+  overrides:
+    dinput8: n,b
+  version: wine-ge-8-26-x86_64

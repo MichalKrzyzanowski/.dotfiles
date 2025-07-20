@@ -1,0 +1,20 @@
+game:
+  exe: /home/mike/games/doom-64/drive_c/GOG Games/DOOM 64/DOOM64_x64.exe
+  launch_configs: []
+  name: DOOM 64
+game_slug: doom-64
+name: DOOM 64
+script:
+  files:
+  - goginstaller: N/A:Select the installer from GOG
+  game:
+    exe: /home/mike/games/doom-64/drive_c/GOG Games/DOOM 64/DOOM64_x64.exe
+    launch_configs: []
+    name: DOOM 64
+  installer:
+  - autosetup_gog_game: goginstaller
+  system: {}
+service: gog
+service_id: '1456611261'
+slug: doom_64
+version: GOG

@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+gamecontrollerdb_url="https://raw.githubusercontent.com/mdqinc/SDL_GameControllerDB/master/gamecontrollerdb.txt"
+gamecontrollerdb_file="${HOME}/.gamecontrollerdb"
+
+result=$(curl ${gamecontrollerdb_url})
+echo $(echo $result | grep -i "doctype\|404:")
+
+# only update gamecontrollerdb if link points to the correct file
+if [ -z "$(echo ${result} | grep -i "doctype\|404:")" ] && [ -n "${result}" ]
+then
+	curl ${gamecontrollerdb_url} > ${gamecontrollerdb_file}
+	echo "updated ${gamecontrollerdb_file}"
+else
+	echo "failed to fetch gamecontrollerdb from ${gamecontrollerdb_url}"
+fi

@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+appid=$1
+workshop_item_id=$2
+
+if [ -z "${appid}" ]
+then
+	echo "no appid"
+	exit 1
+elif [ -z "${workshop_item_id}" ]
+then
+	echo "no workshop item id"
+	exit 1
+fi
+
+
+steamcmd +login Shadow_stalker266 +workshop_download_item ${appid} ${workshop_item_id} +quit

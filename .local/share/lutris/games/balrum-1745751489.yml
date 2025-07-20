@@ -1,0 +1,3 @@
+game:
+  exe: /home/mike/games/balrum/start.sh
+  working_dir: /home/mike/games/balrum/

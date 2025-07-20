@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+run_app()
+{
+	cd /home/mike/tools/vsmodelcreator
+	java -jar vsmodelcreator.jar
+}
+
+run_app

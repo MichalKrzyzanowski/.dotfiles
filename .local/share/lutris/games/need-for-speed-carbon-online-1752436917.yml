@@ -1,0 +1,4 @@
+game:
+  args: --with-everything-unlocked
+  exe: /home/mike/games/need-for-speed-carbon-online/bootstrapper.exe
+  prefix: /home/mike/games/need-for-speed-carbon-online/.wine

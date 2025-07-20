@@ -1,0 +1,2 @@
+dosbox:
+  runner_executable: /usr/bin/dosbox-staging

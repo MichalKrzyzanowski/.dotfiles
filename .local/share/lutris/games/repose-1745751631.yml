@@ -1,0 +1,22 @@
+game:
+  exe: /home/mike/games/repose/drive_c/GOG Games/REPOSE/REPOSE.exe
+  launch_configs: []
+  name: REPOSE
+game_slug: repose
+name: REPOSE
+script:
+  files:
+  - goginstaller: N/A:Select the installer from GOG
+  game:
+    exe: /home/mike/games/repose/drive_c/GOG Games/REPOSE/REPOSE.exe
+    launch_configs: []
+    name: REPOSE
+  installer:
+  - autosetup_gog_game: goginstaller
+  system: {}
+service: gog
+service_id: '1538632704'
+slug: repose
+system:
+  mangohud: false
+version: GOG

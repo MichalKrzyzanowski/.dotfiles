@@ -1,0 +1,3 @@
+game:
+  exe: /home/mike/games/patapon-replay/PATAPON12_REPLAY.exe
+  prefix: /home/mike/games/patapon-replay/.wine

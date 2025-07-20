@@ -1,0 +1,4 @@
+pcsx2:
+  fullscreen: true
+  runner_executable: /usr/bin/pcsx2
+  visible_in_side_panel: true
