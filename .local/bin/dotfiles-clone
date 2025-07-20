@@ -1,17 +1,25 @@
 #!/usr/bin/env sh
 
 repo_url="$1"
+if [ -z "${repo_url}" ]
+then
+	echo "missing repo url."
+	exit 1
+fi
+
 dotfiles="${HOME}/.local/bin/dotfiles"
 backup="${HOME}/.local/bin/dotfiles-backup"
 
-git init --bare ${repo_url} ${HOME}/.dotfiles
+git clone --bare ${repo_url} ${HOME}/.dotfiles
 ${backup}
 
 if [ "$?" -ne "0" ]
 then
 	echo "dotfiles backup failed, aborting."
 	exit 1
+else
+	echo "dotfiles successfully backed up."
 fi
 
-${dotfiles} checkout
+${dotfiles} checkout -f
 ${dotfiles} config --local status.showUntrackedFiles no

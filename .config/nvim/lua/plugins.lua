@@ -23,6 +23,7 @@ Plug("vim-airline/vim-airline-themes")
 Plug("moll/vim-bbye")
 Plug("nvimdev/dashboard-nvim")
 Plug("dhruvasagar/vim-table-mode")
+Plug("timtro/glslView-nvim")
 
 -- lcp plugins
 Plug("hrsh7th/cmp-nvim-lsp")
@@ -57,6 +58,8 @@ require("dashboard").setup({
 		},
 	},
 })
+
+require("glslView").setup({})
 
 local cmp = require("cmp")
 

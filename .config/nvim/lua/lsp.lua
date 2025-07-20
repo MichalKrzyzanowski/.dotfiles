@@ -32,3 +32,7 @@ lspconfig.bashls.setup {
 lspconfig.vimls.setup {
 	capabilities = capabilities
 }
+
+lspconfig.glsl_analyzer.setup {
+	capabilities = capabilities
+}
