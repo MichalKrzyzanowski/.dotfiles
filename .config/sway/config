@@ -37,6 +37,7 @@ output * {
 	 #bg ~/pictures/red-mountain.jpg fill
 	 bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 	 # bg ~/.wallpaper/with-fire-and-sword-wallpaper.jpg fill
+	 # bg ~/.wallpaper/red-mountain.jpg fill
 }
 
 output 'Huawei Technologies Co., Inc. XWU-CBA 0x00000001' {
